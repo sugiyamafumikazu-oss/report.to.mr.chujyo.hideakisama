@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>面談のご報告（令和8年9月19日）中條英明様</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F9F9; --paper:#FFFFFF; --ink:#1E2F3A; --sub:#566670;
+  --sea:#2D6970; --sea-soft:#E3EEEE; --line:#D3DEDF;
+  --amber:#9A6414; --amber-soft:#FBF1E0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121A1F; --paper:#18232A; --ink:#E6EDEF; --sub:#A3B2B8;
+    --sea:#7FBCC2; --sea-soft:#1F3238; --line:#2C3D44;
+    --amber:#E3B062; --amber-soft:#2C2418;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121A1F; --paper:#18232A; --ink:#E6EDEF; --sub:#A3B2B8;
+  --sea:#7FBCC2; --sea-soft:#1F3238; --line:#2C3D44;
+  --amber:#E3B062; --amber-soft:#2C2418;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  font-size:17px; line-height:1.9; letter-spacing:.02em;
+}
+.wrap{max-width:780px; margin:0 auto; padding:40px 22px 64px}
+header{border-bottom:3px solid var(--sea); padding-bottom:22px; margin-bottom:34px}
+.doc-kind{color:var(--sea); font-weight:700; font-size:15px; margin:0 0 6px}
+h1{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif; font-size:30px; line-height:1.45; margin:0 0 14px; font-weight:700}
+.meta{margin:0; color:var(--sub); font-size:15px; line-height:1.8}
+.meta b{color:var(--ink); font-weight:500}
+h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif; font-size:22px; margin:48px 0 14px; padding-left:14px; border-left:5px solid var(--sea); line-height:1.5}
+h3{font-size:18px; margin:26px 0 8px; color:var(--sea)}
+p{margin:0 0 14px}
+.lead{background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:22px 24px}
+.lead ol{margin:0; padding-left:1.4em}
+.lead li{margin-bottom:10px}
+.lead li:last-child{margin-bottom:0}
+
+/* timeline */
+.timeline{list-style:none; margin:8px 0 0; padding:0; position:relative}
+.timeline::before{content:""; position:absolute; left:112px; top:10px; bottom:10px; width:2px; background:var(--line)}
+.timeline li{display:grid; grid-template-columns:100px 1fr; gap:28px; padding:10px 0; position:relative}
+.timeline li::after{content:""; position:absolute; left:106px; top:20px; width:14px; height:14px; border-radius:50%; background:var(--paper); border:3px solid var(--sea)}
+.timeline li.done::after{background:var(--sea)}
+.timeline li.key::after{border-color:var(--amber); background:var(--amber)}
+.t-date{font-weight:700; text-align:right; font-size:15px; line-height:1.6; padding-top:4px}
+.t-body b{display:block; font-size:17px}
+.t-body span{color:var(--sub); font-size:15px}
+
+/* tables */
+.tbl{overflow-x:auto; margin:10px 0 8px}
+table{border-collapse:collapse; width:100%; min-width:520px; background:var(--paper); font-size:15.5px; line-height:1.7}
+th,td{border:1px solid var(--line); padding:10px 12px; vertical-align:top; text-align:left}
+thead th{background:var(--sea-soft); font-weight:700}
+td.num{text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums}
+.note{font-size:14.5px; color:var(--sub); line-height:1.8}
+
+/* Q&A */
+.qa{background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:20px 24px; margin:14px 0}
+.qa .q{font-weight:700; margin-bottom:8px}
+.answer-key{background:var(--sea-soft); border-radius:4px; padding:12px 16px; margin:10px 0 14px; font-weight:500}
+
+/* roles */
+.roles{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:10px}
+.role{background:var(--paper); border:1px solid var(--line); border-top:4px solid var(--sea); border-radius:4px; padding:18px 20px}
+.role.you{border-top-color:var(--amber); background:var(--amber-soft)}
+.role h3{margin:0 0 8px; color:var(--ink)}
+.role ul{margin:0; padding-left:1.2em}
+.role li{margin-bottom:8px}
+
+.caution{border-left:4px solid var(--amber); background:var(--amber-soft); padding:14px 18px; margin:16px 0; border-radius:0 4px 4px 0}
+
+footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:15px; color:var(--sub); line-height:1.9}
+footer b{color:var(--ink)}
+a{color:var(--sea)}
+
+@media (max-width:620px){
+  body{font-size:16px}
+  h1{font-size:25px}
+  .roles{grid-template-columns:1fr}
+  .timeline::before{left:88px}
+  .timeline li{grid-template-columns:78px 1fr; gap:26px}
+  .timeline li::after{left:82px}
+  .t-date{font-size:14px}
+}
+@media print{
+  body{background:#fff; color:#000; font-size:11pt}
+  .wrap{max-width:none; padding:0}
+  h2{break-after:avoid}
+  .qa,.role,.lead,table{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="doc-kind">面談のご報告</p>
+  <h1>中條英明様・八千代様<br>令和8年9月19日 面談内容のまとめ</h1>
+  <p class="meta"><b>面談日</b>　令和8年9月19日（土）13時20分ごろから<br>
+  <b>出席</b>　中條英明様、中條八千代様、社会保険労務士 杉山史和<br>
+  <b>作成日</b>　令和8年9月21日</p>
+</header>
+
+<section>
+  <p>先日はお時間をいただき、ありがとうございました。面談でお話しした内容と、その場でお調べすると申し上げた点を、この1枚にまとめました。お手元での確認や、ご家族との共有にお使いください。</p>
+  <div class="lead">
+    <ol>
+      <li><b>労災（おけが・身体）の障害給付</b>は、概ね3級以上の見込みで、手続きは順調に進んでいます。</li>
+      <li><b>日本年金機構の障害年金</b>は、順天堂の診断書（10月20日ごろ見込み）がそろい次第、<b>10月末</b>に請求します。1級を目指して準備します。</li>
+      <li>ご心配の<b>「7年間止まる」</b>という話は、裁判が終わってから7年ではなく、<b>事故の日から最長7年（令和12年8月まで）</b>という仕組みです。詳しくは下の「7年間止まる」についてをご覧ください。</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>これからの流れ</h2>
+  <ol class="timeline">
+    <li class="done"><div class="t-date">9月19日</div><div class="t-body"><b>面談（今回）</b><span>各給付の見込みと、今後の進め方を確認しました。</span></div></li>
+    <li><div class="t-date">10月20日<br>ごろ</div><div class="t-body"><b>順天堂の診断書ができあがる見込み</b><span>作成依頼からおおむね1か月です。</span></div></li>
+    <li class="key"><div class="t-date">10月末</div><div class="t-body"><b>日本年金機構へ障害年金を請求</b><span>書類への署名はこの時点までにすべて済んでいる予定です。控えをお渡しします。</span></div></li>
+    <li><div class="t-date">請求から<br>約3か月</div><div class="t-body"><b>障害年金の結果（等級）が届く</b><span>通知書の内容を整理してお知らせします。弁護士の先生へは、当事務所から結果をお伝えします。</span></div></li>
+    <li><div class="t-date">随時</div><div class="t-body"><b>労災（身体・精神）の審査結果</b><span>決定が出しだい、同じように内容をお知らせし、弁護士の先生へもお伝えします。</span></div></li>
+  </ol>
+</section>
+
+<section>
+  <h2>手続きごとの状況</h2>
+  <div class="tbl">
+  <table>
+    <thead><tr><th style="width:30%">手続き</th><th>いまの状況</th></tr></thead>
+    <tbody>
+      <tr><td>労災・障害給付（身体：腰椎のおけが）</td><td>監督署からは概ね3級以上と言われており、あとは形式的な手続きが進んでいる段階です。</td></tr>
+      <tr><td>労災・障害給付（精神）</td><td>監督署が「事故より前から精神の病気があったかどうか」を確認しています。ご記入いただいた同意書にもとづき、協会けんぽの過去5年分の受診歴を調べ、事故前に精神疾患の受診がなければ、事故後に発症したものとして労災の対象になります。会社や医師からの書類はそろっており、審査は順調に進んでいます。</td></tr>
+      <tr><td>日本年金機構・障害年金</td><td>順天堂の診断書を待っている段階です。受け取り次第、10月末に請求します。</td></tr>
+      <tr><td>船員保険（労災の上乗せ給付）</td><td>労災の決定内容をもとに機械的に計算されるため、ご家族に特別なお手続きのご負担はありません。手数料の扱いは下の「今後のサポートについて」をご覧ください。ご家族がお調べになった金額（32,670円）と当方の把握している金額に違いがあるため、当事務所で確認します。</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">労災の日額について：会社から提出された書類では42,000円となっていましたが、年金として受け取る労災給付には年齢ごとの上限額があり、中條様の場合は27,000円が上限になります。監督署は会社からの資料をもとに正しい金額を把握しており、ご家族が改めて書き直す必要はありません。</p>
+</section>
+
+<section>
+  <h2>受け取れる金額の目安</h2>
+  <p>等級が決まる前の目安です。最終的な金額は、それぞれの決定通知でご確認いただけます。</p>
+
+  <h3>労災の障害（補償）年金</h3>
+  <div class="tbl">
+  <table>
+    <thead><tr><th>等級</th><th>計算</th><th>年額</th><th>月額</th></tr></thead>
+    <tbody>
+      <tr><td>2級</td><td>27,000円 × 277日分</td><td class="num">7,479,000円</td><td class="num">623,250円</td></tr>
+      <tr><td>3級</td><td>27,000円 × 245日分</td><td class="num">6,615,000円</td><td class="num">551,250円</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>このほか、一時金として<b>障害特別支給金</b>が支払われます（3級 300万円、2級 320万円、1級 342万円）。</p>
+
+  <h3>日本年金機構の障害年金</h3>
+  <div class="tbl">
+  <table>
+    <thead><tr><th>内容</th><th>金額の目安</th></tr></thead>
+    <tbody>
+      <tr><td>1階部分：障害基礎年金（定額）</td><td>2級 年847,300円（月約7万円）／1級 年1,059,125円（月約8.8万円）　※令和8年度の額</td></tr>
+      <tr><td>2階部分：障害厚生年金（報酬比例）</td><td>加入記録をもとに計算するため、現時点では算出できません。同じくらいのご収入の方の例からは、月20万円前後（年240万円前後）になる可能性があります。</td></tr>
+      <tr><td>配偶者の加算</td><td>1級・2級の場合、八千代様が65歳未満などの条件を満たすと、配偶者加給年金が加わります。</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>両方を受け取るときの調整</h3>
+  <p>労災の年金と日本年金機構の年金を同時に受け取る場合、日本年金機構の年金は全額支給され、<b>労災の年金のほうが一定の率で減額</b>されます。</p>
+  <div class="tbl">
+  <table>
+    <thead><tr><th>日本年金機構側で受け取る年金</th><th>労災の年金にかける率</th><th>例：労災2級の場合の年額</th></tr></thead>
+    <tbody>
+      <tr><td>障害厚生年金＋障害基礎年金（1級・2級）</td><td class="num">0.73</td><td class="num">5,459,670円</td></tr>
+      <tr><td>障害厚生年金のみ（3級）</td><td class="num">0.83</td><td class="num">6,207,570円</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">この調整は一時的なものではなく、両方を受け取る間ずっと続きます。障害特別支給金（一時金）は調整の対象になりません。</p>
+</section>
+
+<section>
+  <h2>「7年間止まる」について</h2>
+  <p>面談で八千代様からご質問いただき、その場で結論が出せなかった点です。改めて調べた結果をお伝えします。</p>
+
+  <div class="qa">
+    <p class="q">裁判で損害賠償を受け取ったら、そのあと7年間、年金が止まってしまうのですか？</p>
+    <div class="answer-key">止まる可能性があるのは労災の年金で、その期間は「事故の日から最長7年」です。裁判が終わってから7年ではありません。</div>
+    <p>事故の相手方（第三者）から、本人が直接損害賠償を受け取った場合、同じ損害を二重に補償しないように、労災の年金はその賠償額に達するまで支給が控えられます。ただし、この「控える」期間には上限があり、<b>事故の日（令和5年8月9日）から7年</b>、つまり<b>令和12年8月まで</b>です。それ以降は、賠償額がどれだけ大きくても、労災の年金は通常どおり支給されます。</p>
+    <p>また、調整の対象は損害賠償のうち<b>働けなくなったことによる収入の補償（逸失利益）</b>に当たる部分だけで、<b>慰謝料や治療費の部分は対象外</b>です。</p>
+  </div>
+
+  <div class="qa">
+    <p class="q">日本年金機構の障害年金も止まるのですか？</p>
+    <div class="answer-key">日本年金機構の障害年金にも同じような仕組みはありますが、上限は事故の翌月から3年です。中條様の場合はその期間が令和8年8月ですでに過ぎているため、今後の裁判の結果で止まることはないと考えています。</div>
+  </div>
+
+  <div class="qa">
+    <p class="q">止まったあと、また受け取れるようになるとき、改めて審査やヒアリングがあるのですか？</p>
+    <p>控えられていた期間が終われば、支給は再開されます。等級をもう一度審査し直す仕組みではありません。再開の際に届出が必要かどうかなど具体的な手順は、当事務所から監督署に確認してお知らせします。</p>
+  </div>
+
+  <h3>弁護士の先生への共有</h3>
+  <p>上のとおり、損害賠償を<b>どなたが、どなたに対して請求し、どのような内訳で受け取るか</b>によって、労災の年金への影響が変わります。訴訟の進め方は弁護士の先生のご判断となりますが、裁判が始まる前のいまの段階で論点に含めていただけるよう、年金・労災給付との調整の仕組みについては当事務所から先生へお伝えします。</p>
+
+  <div class="caution">相手方と示談や和解をする場合、内容によっては労災の給付が受けられなくなることがあります。示談・和解の前には、必ず当事務所にもご一報ください。</div>
+</section>
+
+<section>
+  <h2>役割分担</h2>
+  <div class="roles">
+    <div class="role">
+      <h3>当事務所が行うこと</h3>
+      <ul>
+        <li>診断書を受け取りしだい、10月末をめどに障害年金を請求します。</li>
+        <li>障害年金・労災の決定が出たら、通知書の内容を整理してお知らせします。</li>
+        <li>給付の見込み、等級の決定結果、「7年」の調整の仕組みを、当事務所から弁護士の先生へお伝えします。</li>
+        <li>船員保険の金額の違い（32,670円）を確認します。</li>
+        <li>労災の支給が再開されるときの手順を監督署に確認します。</li>
+      </ul>
+    </div>
+    <div class="role you">
+      <h3>中條様にお願いしたいこと</h3>
+      <ul>
+        <li>お手元に届いた書類（診断書、申込書、各種の通知書など）は、PDFやスマートフォンの写真で当事務所へお送りください。</li>
+                <li>示談や和解の話が出たときは、決める前に当事務所へご連絡ください。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>今後のサポートについて</h2>
+  <p>今回は、ご本人の状態を踏まえて<b>1級</b>を目指して請求します。仮に2級の決定となった場合でも、その後に診断書をそろえて1級への改定（額改定請求）を目指すことができます。そのときは改めて準備をお手伝いします。</p>
+  <p>障害年金には、2年・3年・5年ごとの更新（診断書の提出）が必要な場合と、更新の必要がない永久認定の場合があります。更新が必要な場合も当事務所でお手伝いします。</p>
+  <div class="tbl">
+  <table>
+    <thead><tr><th>手続き</th><th>手数料</th></tr></thead>
+    <tbody>
+      <tr><td>障害年金の請求（今回）</td><td>年金の2か月分</td></tr>
+      <tr><td>更新の手続き</td><td>年金の1か月分</td></tr>
+      <tr><td>船員保険の上乗せ給付</td><td>別途の手数料はいただきません（下記参照）</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><b>船員保険の手数料について：</b>船員保険の上乗せ給付が加わると、中條様が受け取る年金の額がその分増えます。手数料は、この上乗せ分を含めた年金額の2か月分としていただきます。そのため、船員保険の手続きだけを取り出して別に手数料をいただくことはありません。</p>
+  <p>ご体調によってお電話が難しい日もあると思います。連絡は当事務所が窓口になりますので、ご都合のよいときにご連絡ください。</p>
+</section>
+
+<footer>
+  <b>静岡障害年金サポートきぼう</b>（社会保険労務士法人キャリアデザイン）<br>
+  社会保険労務士　杉山 史和<br>
+  電話　055-960-9323　／　メール　<a href="mailto:f.sugiyama@nexio.jp">f.sugiyama@nexio.jp</a><br>
+  <span class="note">このページの金額は、面談時点の情報にもとづく目安です。正式な金額・等級は各機関の決定通知によります。</span>
+</footer>
+
+</div>
+</body>
+</html>
